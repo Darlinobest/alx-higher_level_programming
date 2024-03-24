@@ -1,7 +1,11 @@
 #!/usr/bin/python3
 def best_score(a_dictionary):
-    if a_dictionary == None:
+    if a_dictionary == {} or a_dictionary == None:
         return None
     else:
-        copy_dict = a_dictionary.copy()
-        return (max(copy_dict))
+        values = a_dictionary.values()
+        max_value = max(values)
+        keys = a_dictionary.keys()
+        for keys in a_dictionary:
+            if a_dictionary[keys] == max_value:
+                return keys
