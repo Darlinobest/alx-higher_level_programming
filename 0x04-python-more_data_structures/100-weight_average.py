@@ -1,4 +1,4 @@
-#!/ust/bin/python3
+#!/usr/bin/python3
 def weight_average(my_list=[]):
     sum_of_weight = 0
     total_weight = 0
