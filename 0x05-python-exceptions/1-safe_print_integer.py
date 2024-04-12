@@ -2,12 +2,7 @@
 
 def safe_print_integer(value):
     try:
-        if isinstance(value, int):
-            print("{:d}".format(value))
-            return True
-        else:
-            print("Not an integer")
-            return False
-     except Exception as e:
-         print(f"Error {e}")
-         return False
+        print("{:d}".format(value))
+        return True
+    except(TypeError, ValueError):
+        return False
