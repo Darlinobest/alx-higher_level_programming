@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 
+
 # 0-square.py
 # Darlington K Onwuemebolam
 
