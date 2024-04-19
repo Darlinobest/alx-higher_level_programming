@@ -1,14 +1,18 @@
 #!/usr/bin/python3
 # 6-square.py
 # Darlington K Onwuemebolam
+"""Definition of a class."""
+
 
 class Square:
+    """Represents a class."""
     def __init__(self, size=0, position=(0, 0)):
         self.size = size
         self.position = position
 
     @property
     def size(self):
+        """Get the size of the square."""
         return self.__seize
 
     @size.setter
@@ -22,6 +26,7 @@ class Square:
     
     @property
     def position(self):
+        """Get the position of the square."""
         return self.__position
 
     @position.setter
@@ -33,10 +38,10 @@ class Square:
         self.__position = value
 
     def area(self):
-        """ Return the area of the square """
+        """Return the area of the square."""
         return self.__size ** 2
        
-    """ prints a square with # symbol """
+    """prints a square with # symbol."""
     def my_print(self):
         if self.__size == 0:
             print()
