@@ -24,7 +24,7 @@ class Square:
             raise ValueError("size must be >= 0")
         else:
             self.__size = value
-    
+
     @property
     def position(self):
         """Get the position of the square."""
@@ -42,7 +42,7 @@ class Square:
     def area(self):
         """Return the area of the square."""
         return self.__size ** 2
-       
+
     """prints a square with # symbol."""
     def my_print(self):
         if self.__size == 0:
